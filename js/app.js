@@ -283,10 +283,7 @@ var setLight12Class=setMyLightClass.bind(btn12);
    * Hint: Do not declare a new function expression as an event handler.
    */
 
-   btn15.addEventListener('click',function(event){
-   setMyLightGreen.bind(this)(event,'light-green');
-
-   })
+ btn15.addEventListener('click', setMyLightClass.bind(btn15, null, 'light-green'));
 
 
 
